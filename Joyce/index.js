@@ -1,11 +1,24 @@
 //1. The Greater Numbers. Create a function which accepts two arguments: the first argument being an array of numbers, and the second argument being a number. The function should return the elements of the array which are greater than the second argument.
+// function findGreatest(array, num) {
+//   let result = [];
+//   for (let i = 0; i < array.length; i++) {
+//     if (array[i] > num) {
+//       result.push(array[i]);
+//     }
+//   }
+//   return result.join(" ");
+// }
+
 function findGreatest(array, num) {
+  let result = [];
   for (let item of array) {
     if (item > num) {
-      return item;
+      result.push(item);
     }
   }
+  return result.join(" ");
 }
+
 console.log(findGreatest([3, 4, 5], 4));
 console.log(findGreatest([10, 20, 30], 12));
 console.log(findGreatest([0, 10, 3], 4));
