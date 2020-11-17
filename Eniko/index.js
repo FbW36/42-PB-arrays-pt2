@@ -67,7 +67,8 @@ const reverseTheNumber = (num) => {
 	console.log(numToPieces);
 	let finalNumber = numToPieces.reverse().join("");
 	console.log(finalNumber);
-	return Number(finalNumber);
+	//return Number(finalNumber);
+	return finalNumber;
 };
 const answer = reverseTheNumber(number);
 console.log(answer);
